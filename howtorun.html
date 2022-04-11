@@ -4,7 +4,6 @@
         <title>HTT-Viz</title>
         <style>
             img{
-                padding-right: 50px;
                 margin-right: auto;
                 margin-left: auto;
                 display: block;
@@ -14,24 +13,90 @@
                 font-weight: bold;
             }
         </style>
-        <link rel="stylesheet" href="style.css" type=""text/css>
+        <link rel="stylesheet" href="style.css" type="text/css">
     </head>
     <body>
         <header>
             
             <div class = "container1">
                 <nav> 
-                    <img src="images/better_logo.png" alt="logo">
+                    <b>
+                        <img src="images/better_logo.png" alt="logo">
+                    </b>
                     <ul>
                         <li><a href="index.html">HOME</a></li>
                         <li><a href="about.html">ABOUT</a></li>
                         <li><a href="howtorun.html">HOW TO RUN</a></li>
                         <li><a href="team.html">HTT-VIZ TEAM</a></li>
+                        <li><a href="videos.html">Videos</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
-        <footer class = "container2">
+        <div class = "main_text">
+            <p>
+                <br>Launching HTT-Viz is a multi-step process. The following launch tutorial assumes that
+                <br>you have already installed both <a target="_blank" href="http://wiki.ros.org/noetic/Installation">ROS Noetic</a> and <a target="_blank" href="https://pypi.org/project/PyQt5/">PYQT Version 5</a>. Click the links if you
+                <br>still need to install either.
+            </p>
+            <p>
+                <bold>
+                    <br>Step 1: Launch Roscore
+                </bold>
+            </p>
+            <p>
+                <br>The first step to laucnhing HTT-Viz is launching roscore. To do this, write "roscore"
+                <br>in the terminal. After running roscore, let this terminal run in the background.
+                <br>The output should look like the below image. 
+            </p>
+            <p><img src="images/roscore.png" alt="roscore"></p>
+            <p>
+                <bold>
+                    <br>Step 2: Catkin Workspace
+                </bold>
+            </p>
+            <p>
+                <br>Open a second terminal, and travel to the directory in which you wish to
+                <br>store HTT-Viz. Here, run the command "mkdir -p catkin_ws/src" to create both
+                <br>the workspace and source folders. Now, navigate to catkin_ws, and run the 
+                <br>command "catkin_make". The output should look like the below image.
+            </p>
+            <p><img src="images/catkin.png" alt="roscore"></p>
+            <p>
+                <bold>
+                    <br>Step 3: Download HTT-Viz
+                </bold>
+            </p>
+            <p>
+                <br>If you have already downloaded HTT-Viz, move it to the recently created src 
+                <br>folder. If you haven't already downloaded it, either do so now, or run the
+                <br>command "git clone https://github.com/tylerjohnbecker/htt-viz" while within the
+                <br>src folder, assuming you have git installed. You should now see a folder titled
+                <br>"htt-viz" within the src folder.
+            </p>
+            <p>
+                <bold>
+                    <br>Step 4: Launch HTT-Viz
+                </bold>
+            </p>
+            <p>
+                <br>Finally, navigate back to the "catkin_ws" folder. Here, run the command
+                <br>"souce devel/setup.bash". Now, your environment is ready to run HTT-Viz. The final
+                <br>command you need to run is "rosrun htt_viz htt_viz". This will launch the program.
+            </p>
+            <p>
+                <bold>
+                    <br>Important Notice
+                </bold>
+            </p>
+            <p>
+                <br>When launching HTT-Viz in the future, the only steps you will have to repeat
+                <br>are Steps 1 and 4. Steps 2 and 3 were only necessary before the first launch.
+            </p>
+                
+            
+        </div>
+        <footer class = "container3">
             <div>
                 <p>HTT-Viz</p>
                 <p>Team 18</p>
