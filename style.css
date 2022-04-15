@@ -9,7 +9,7 @@
 
 .container2 
 {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
     background: #4D5157;
