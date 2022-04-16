@@ -30,6 +30,17 @@
 
 }
 
+.container4 
+{
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+    background: #4D5157;
+    bottom: 0px;
+    text-align: center;
+    margin-left: -55%;
+}
+
 .main_text
 {
     padding-top: 160px;
@@ -100,4 +111,20 @@ bold
 {
     font-size: 25px;
     font-weight: bold;
+}
+
+.vidtitle
+{
+    text-align:center;
+}
+
+video
+{
+    margin-top: 0px;
+}
+
+.vidbox1
+{
+    margin-left: 33%;
+    margin-top: 7.5%;
 }
